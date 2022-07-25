@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-size: 13px;
+    font-family: verdana;
+    text-decoration: none;  
+    background: #ffffff; 
+}
+
+body{
+    background-color: var(--bg-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    padding: 30px; 
+    flex-direction: column;
+}
+
+.ig-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0 0 0;
+    height: 80vh;
+    width: 50%;
+    gap: 20px;
+    
+    
+}
+
+:placeholder-shown{
+    border: red;
+}
+
+.ig-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52%;
+
+}
+
+.ig-phone img{
+    height: 65rem;
+}
+
+.ig-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 560px;
+    width: 40%;
+    
+    
+}
+
+.group{
+    background-color: var(--block);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    border: 1px solid lightgray;
+   
+}
+
+.group:nth-child(1){
+    min-height: 380px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.form input{
+    width: 270px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+}
+
+.text{
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    border: var(--lgrey) 1px solid;
+    padding: 12px 10px;
+    font-size: 11px;
+}
+
+.btn-login{
+    margin-top: 12px;
+    padding: 7px 0;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--btn-active);
+    color: var(--bg-color);
+    font-weight: 550;
+    cursor: pointer;
+    color: #fafafa;
+    background-color: #0097f7;
+}
+
+.division{
+    color: var(--grey);
+}
+
+.fb{
+    color: var(--fb-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fb i{
+    color: var(--fb-color);
+    font-size: 20px;
+    margin-right: 5px;
+    color: #385185;
+}
+
+.forgot-password p{
+    color: var(--fb-color);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.group:nth-child(2){
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signup{
+    color: var(--btn-active);
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.app{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.app img{
+    margin-top: 15px;
+    margin-left: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.app .btn-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+footer .ig-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .ig-footer p{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+footer .info, .info2, .info3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer .info3{
+    padding-top: 15px;
+}
+
+footer p{
+    color: var(--grey);
+    font-size: 11px;
+    margin: 5px 0;
+}
+
+footer .contacts a{
+    color: var(--grey);
+    font-size: 11px;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+    .ig-wrapper {
+        width: 85%;
+        
+    }
+
+    .ig-phone img{
+        display:none;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .ig-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 875px){
+
+    .ig-wrapper{
+        width: 100%;
+    }
+
+    .ig-login{
+        margin: auto;
+        width: 50%;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .ig-login{
+        width: 100%;
+    }
+
+    .logo{
+        width: 180px;
+    }
+
+    .group{
+        border: none;
+        background-color: inherit;
+    }
+}
